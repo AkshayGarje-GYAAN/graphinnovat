@@ -1,0 +1,15 @@
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > span {
+  margin-left: 10px;
+}
+
+.logo > span strong {
+  color: var(--gray-text);
+}
+.logo > span span {
+  color: var(--second-gray);
+}
