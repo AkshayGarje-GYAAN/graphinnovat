@@ -45,6 +45,7 @@ const styles = {
   },
   contactContainer: {
     margin: 64,
+    marginRight:32,
     padding: 64,
     width: "50%",
     borderRadius: "10px",
