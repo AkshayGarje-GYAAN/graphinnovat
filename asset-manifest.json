@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/graphinnovat/static/css/main.39783a68.css",
-    "main.js": "/graphinnovat/static/js/main.db70ea89.js",
-    "static/js/453.ff0a00bf.chunk.js": "/graphinnovat/static/js/453.ff0a00bf.chunk.js",
-    "index.html": "/graphinnovat/index.html",
-    "main.39783a68.css.map": "/graphinnovat/static/css/main.39783a68.css.map",
-    "main.db70ea89.js.map": "/graphinnovat/static/js/main.db70ea89.js.map",
-    "453.ff0a00bf.chunk.js.map": "/graphinnovat/static/js/453.ff0a00bf.chunk.js.map"
+    "main.css": "/static/css/main.39783a68.css",
+    "main.js": "/static/js/main.b7fcb27d.js",
+    "static/js/453.ff0a00bf.chunk.js": "/static/js/453.ff0a00bf.chunk.js",
+    "static/media/slider2.jpeg": "/static/media/slider2.75863d4926879c6ea4cf.jpeg",
+    "static/media/h-logo.png": "/static/media/h-logo.9df38be6f5b05563ae17.png",
+    "static/media/slider3.jpeg": "/static/media/slider3.fc07c0dbec9a3c22bc6c.jpeg",
+    "static/media/slider1.jpg": "/static/media/slider1.8ca06956c3df481583a4.jpg",
+    "index.html": "/index.html",
+    "main.39783a68.css.map": "/static/css/main.39783a68.css.map",
+    "main.b7fcb27d.js.map": "/static/js/main.b7fcb27d.js.map",
+    "453.ff0a00bf.chunk.js.map": "/static/js/453.ff0a00bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.39783a68.css",
-    "static/js/main.db70ea89.js"
+    "static/js/main.b7fcb27d.js"
   ]
 }
