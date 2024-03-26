@@ -1,3 +1,7 @@
+import slider1 from "../assets/slider1.jpg"
+import slider2 from "../assets/slider2.jpeg"
+import slider3 from '../assets/slider3.jpeg'
+
 export const works = [
   {
     title: "Chatify",
@@ -200,7 +204,7 @@ export const socialicons = [
 export const profile = [
   {
     title: "Profile",
-    img: "/static/slider1.jpeg",
+    img: slider1,
     text: "Extremely motivated to constantly develop my skills and grow professionally. I am confident in my ability to come up with new ideas and enhance  my UI and UX skills.",
     icon: "paint-brush",
   },
@@ -208,12 +212,12 @@ export const profile = [
     title: "Quotes",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ante nec imperdiet venenatis. Aenean sed consectetur enim. Donec pretium erat ut varius varius.",
     icon: "quote-left",
-    img: "/static/slider2.jpeg",
+    img: slider2,
   },
   {
     title: "Inspiration",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ante nec imperdiet venenatis. Aenean sed consectetur enim. Donec pretium erat ut varius varius.",
-    img: "/static/slider3.jpeg",
+    img: slider3,
     icon: "lightbulb",
   },
 ];
