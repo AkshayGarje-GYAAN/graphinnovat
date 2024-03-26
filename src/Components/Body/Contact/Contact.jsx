@@ -1,63 +1,85 @@
-import React, { useContext, useState } from 'react'
-import Banner from '../Banner/Banner'
-import './Contact.css'
-import Card from  '../../Reuseable/Card/Card'
-import { contactboxes, contactinputs } from '../../Appconstant'
-import Iconbox from '../../Reuseable/Icon/Iconbox'
-import Objectinput from '../../Reuseable/Input/Objectinput'
-import AppButton from '../../Reuseable/Button/Button'
-import emailjs from 'emailjs-com';
-import { addNotification } from '../../Appfunctions'
-import { ContextApp } from '../../../ContextAPI'
-import Bannerprops from '../Banner/Bannerprops'
+import React from "react";
+import ContactForm from "./ContactForm";
 
-function Contact() {
-  const {notifisystem} = useContext(ContextApp)
-  const [formvalues, setFormvalues] = useState({
-    name: '',
-    email: '',
-    msg: ''
-  })
-  function sendEmail(e) {
-    console.log('asd')
-    e.preventDefault();
-    emailjs.sendForm('service_jsaoihr', 'template_h5vq1co', e.target, 'user_B0W0FA6EBGqj9vC542Rs3')
-      .then((result) => {
-          console.log(result.text);
-          const parameters = {
-            msg: 'Email Sent!',
-            icon: 'fad fa-envelope',
-            notifisystem
-          }
-          addNotification(parameters)
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
-  const forminputs = contactinputs?.map(input=>{
-    return <Objectinput 
-    text={input.text} 
-    value={formvalues} 
-    setValue={setFormvalues} 
-    obj={input.value}
-    textarea={input.textarea}
-    name={input.name}
-    />
-  })
-  const contactboxesrow = contactboxes?.map(box=>{
-    return (
-       <Card copy={true} card={box} iconlink={
-        <a href={box.link} target={!box.notblank&&'__blank'}>
-          <i className='fal fa-chevron-right'></i>
-        </a>
-       }/>
-    )
-  })
-
+const Contact = () => {
   return (
-    <div >
-        
+    <div style={styles.container}>
+     
+      <div style={styles.contactContainer}>
+        <h1 style={styles.heading}>Contact Us</h1>
+        <div style={styles.contactInfo}>
+          <p style={styles.info}>
+            <span style={styles.icon}>📍</span>{" "}
+            <span style={styles.label}>Office Address:</span> Schoener 42 9, 8243 VW,
+            Lelystad, The Netherlands
+          </p>
+          <p style={styles.info}>
+            <span style={styles.icon}>🧪</span>{" "}
+            <span style={styles.label}>Lab Address:</span> Lab No.3, Runderweg 6,
+            8219 PK, Lelystad, The Netherlands
+          </p>
+          <p style={styles.info}>
+            <span style={styles.icon}>☎️</span>{" "}
+            <span style={styles.label}>Phone:</span> +31-(0)64319094
+          </p>
+          <p style={styles.info}>
+            <span style={styles.icon}>✉️</span>{" "}
+            <span style={styles.label}>Email:</span>{" "}
+            <a href="mailto:amc@graphinnovat.com" style={styles.link}>
+              amc@graphinnovat.com
+            </a>
+          </p>
+        </div>
+      </div>
+      <ContactForm/>
     </div>
-  )
-}
-export default Contact
+  );
+};
+
+const styles = {
+  container: {
+    display:"flex",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  contactContainer: {
+    margin: 64,
+    padding: 64,
+    width: "50%",
+    borderRadius: "10px",
+    backgroundColor: "#fff",
+    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+  },
+  heading: {
+    textAlign: "center",
+    marginBottom: "30px",
+    fontSize: "28px",
+    color: "#f1a81d",
+    textTransform: "uppercase",
+  },
+  contactInfo: {
+    marginTop: "20px",
+  },
+  info: {
+    marginBottom: "20px",
+    fontSize: "18px",
+    lineHeight: "1.5",
+    color: "#333",
+    display: "flex",
+  },
+  label: {
+    fontWeight: "bold",
+    marginRight: "10px",
+  },
+  icon: {
+    fontSize: "24px",
+    marginRight: "15px",
+  },
+  link: {
+    color: "#f1a81d",
+    textDecoration: "none",
+  },
+};
+
+export default Contact;

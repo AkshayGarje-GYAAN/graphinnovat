@@ -16,9 +16,9 @@ function YouAreLost() {
   }
 
   return <div className="youarelost" onMouseMove={e=>deterMineShadow(e)}>
-    <p style={{textShadow: `rgb(0 0 0 / 33%) -${textshadow.x/30}px ${textshadow.y/30}px 10px`}}>{`4{}4`}</p>
+    <p style={{textShadow: `rgb(0 0 0 / 33%) -${textshadow.x/30}px ${textshadow.y/30}px 10px`}}>{`Coming Soon..`}</p>
    
-      <HashLink smooth  to='/'>
+      <HashLink smooth  to='/' style={{marginTop:64}}>
         <AppButton text='Back Home' icon='fad fa-home'/>
       </HashLink>
   </div>

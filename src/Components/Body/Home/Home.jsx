@@ -12,6 +12,7 @@ import { FaHandshake } from "react-icons/fa";
 import { GiChemicalDrop } from "react-icons/gi";
 import { MdPrecisionManufacturing } from "react-icons/md";
 import AboutUs from "../AboutUs/AboutUs";
+import Contact from "../Contact/Contact";
 
 function Home(props) {
   const [currentslide, setCurrentslide] = useState(0);
@@ -287,7 +288,7 @@ function Home(props) {
             </Card>
           ))}
         </div>
-        
+        <Contact/>
     </>
   );
 }
