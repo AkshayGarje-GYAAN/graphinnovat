@@ -1,19 +1,27 @@
 {
   "files": {
     "main.css": "/static/css/main.68e0472f.css",
-    "main.js": "/static/js/main.b4dc2963.js",
+    "main.js": "/static/js/main.71f94a47.js",
     "static/js/453.ff0a00bf.chunk.js": "/static/js/453.ff0a00bf.chunk.js",
+    "static/media/automotive.png": "/static/media/automotive.962ce1668077113696ae.png",
+    "static/media/battery.png": "/static/media/battery.67721ea6949a3d625f25.png",
+    "static/media/construction.png": "/static/media/construction.069909ebf18e32a57e0f.png",
     "static/media/slider2.jpeg": "/static/media/slider2.75863d4926879c6ea4cf.jpeg",
+    "static/media/industy.png": "/static/media/industy.fe2507082938775056b9.png",
+    "static/media/esre.png": "/static/media/esre.5ae0fae5b0e2b18ce2de.png",
+    "static/media/electronics.png": "/static/media/electronics.f7e90f1671a634aba3be.png",
+    "static/media/steel.png": "/static/media/steel.b8b8ff8bcedc46dd1cb6.png",
+    "static/media/composite.png": "/static/media/composite.205f39af5ba5a5dcd649.png",
     "static/media/h-logo.png": "/static/media/h-logo.9df38be6f5b05563ae17.png",
-    "static/media/slider3.jpeg": "/static/media/slider3.fc07c0dbec9a3c22bc6c.jpeg",
+    "static/media/new.jpeg": "/static/media/new.a799bbaeecd50a6662fe.jpeg",
     "static/media/slider1.jpg": "/static/media/slider1.8ca06956c3df481583a4.jpg",
     "index.html": "/index.html",
     "main.68e0472f.css.map": "/static/css/main.68e0472f.css.map",
-    "main.b4dc2963.js.map": "/static/js/main.b4dc2963.js.map",
+    "main.71f94a47.js.map": "/static/js/main.71f94a47.js.map",
     "453.ff0a00bf.chunk.js.map": "/static/js/453.ff0a00bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68e0472f.css",
-    "static/js/main.b4dc2963.js"
+    "static/js/main.71f94a47.js"
   ]
 }
