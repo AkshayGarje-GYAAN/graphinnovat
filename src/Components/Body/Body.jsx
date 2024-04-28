@@ -7,6 +7,7 @@ import './Body.css'
 import { Route, Switch } from 'react-router-dom'
 import Home from './Home/Home'
 import Contact from './Contact/Contact'
+import Graphite from './Graphite'
 import NotificationSystem from 'react-notification-system';
 import Footer from './Footer/Footer'
 import YouAreLost from './404/YouAreLost'
@@ -17,6 +18,7 @@ import { AnimatePresence } from 'framer-motion'
 import Aboutme from './Aboutme/Aboutme'
 import { FaArrowUp } from "react-icons/fa";
 import AboutUs from './AboutUs/AboutUs'
+import RelatedMarket from './Related Market'
 
 function Body(props) {
   const {scrolled, notifisystem} = useContext(ContextApp)
@@ -42,6 +44,12 @@ function Body(props) {
         </Route>
         <Route path='/contact' exact>
           <Contact/>
+        </Route>
+        <Route path='/graphite' exact>
+          <Graphite/>
+        </Route>
+        <Route path='/applications' exact>
+          <RelatedMarket/>
         </Route>
         {/* <Route path='/'>
             <Aboutme />

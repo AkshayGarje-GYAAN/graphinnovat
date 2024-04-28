@@ -1,6 +1,6 @@
-import slider1 from "../assets/slider1.jpg"
-import slider2 from "../assets/slider2.jpeg"
-import slider3 from '../assets/slider3.jpeg'
+import slider1 from "../assets/slider1.jpg";
+import slider2 from "../assets/slider2.jpeg";
+import slider3 from '../assets/new.jpeg';
 
 export const works = [
   {
@@ -152,6 +152,14 @@ export const links = [
     // ]
   },
   {
+    link: "/graphite",
+    text: "Graphite",
+  },
+  {
+    link: "/applications",
+    text: "Applications",
+  },
+  {
     link: "/contact",
     text: "Contact",
   },
@@ -204,7 +212,7 @@ export const socialicons = [
 export const profile = [
   {
     title: "Profile",
-    img: slider1,
+    img: slider3,
     text: "Extremely motivated to constantly develop my skills and grow professionally. I am confident in my ability to come up with new ideas and enhance  my UI and UX skills.",
     icon: "paint-brush",
   },
@@ -217,7 +225,7 @@ export const profile = [
   {
     title: "Inspiration",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis ante nec imperdiet venenatis. Aenean sed consectetur enim. Donec pretium erat ut varius varius.",
-    img: slider3,
+    img: slider1,
     icon: "lightbulb",
   },
 ];
